@@ -36,15 +36,16 @@
 		<main>
 
 			<div id="esp">
-				Bienvenido
+				<a href="#">Bienvenido</a>
 			</div>
 
 			<div id="eus">
-				Ongi Etorri
+				<a href="#">Ongi Etorri</a>
 			</div>
 
 			<div id="eng">
-				Welcome
+				<a href="#">Welcome</a>
+				
 			</div>
 
 
@@ -52,7 +53,6 @@
 			<script>
 
 				const DATE_TARGET = new Date('08/04/2022 06:00 PM');
-
 				const DIAS = document.getElementById("dias");
 				const HORAS = document.getElementById("horas");
 				const MINUTOS = document.getElementById("minutos");
@@ -62,9 +62,6 @@
 				const MILLISECONDS_OF_A_MINUTE = MILLISECONDS_OF_A_SECOND * 60;
 				const MILLISECONDS_OF_A_HOUR = MILLISECONDS_OF_A_MINUTE * 60;
 				const MILLISECONDS_OF_A_DAY = MILLISECONDS_OF_A_HOUR * 24
-
-
-
 
 				function updateCountdown(){
 					const NOW = new Date();
