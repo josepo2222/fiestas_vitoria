@@ -4,7 +4,10 @@ body{
     background-color:rgb(102, 100, 237);
     background-image: linear-gradient(rgb(102, 100, 237), white);
     background-attachment: fixed;
-    /* background-image: url(../imagenes/celedon17.jpg); */
+    background-image: url(../imagenes/celedon17.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
     
 }
 
@@ -13,6 +16,7 @@ header{
     display: flex;
     flex-direction: column;
     text-align: center;
+    /* background-image: url(../imagenes/celedon17.jpg); */
     /* background-color: cornflowerblue; */
     
 }
@@ -36,4 +40,37 @@ main > div {
 div a {
     text-decoration: none;
     color: black;
+}
+
+main div #boton_historia{
+    flex: 100%;
+    margin-top: 0; 
+}
+main div #boton_programa{
+    flex: 100%;
+    margin-top: 0; 
+}
+main > h2{
+    flex: 100%;
+    margin-bottom: 0;
+}
+main div #boton_todos{
+    flex: 100%;
+    margin-top: 0; 
+}
+main div #boton_infantiles{
+    flex: 100%;
+    margin-top: 0; 
+}
+#boton_historia, #boton_programa,#boton_todos,#boton_infantiles{
+    border: solid black 1px;
+}
+
+input[type=text], select, textarea{
+    width: 3vw;
+    height: 6vh;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 4vh;
+    resize: both;
 }
