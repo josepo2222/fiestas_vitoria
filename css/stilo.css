@@ -1,47 +1,40 @@
+.fa-umbrella{
+    color: blue;
+}
+
 body{
     margin: 0;
     font-size: 5vh;
     background-color:rgb(102, 100, 237);
-    background-image: linear-gradient(rgb(102, 100, 237), white);
     background-attachment: fixed;
     background-image: url(../imagenes/celedon17.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; 
-    
+    background-size: cover;
+        
 }
-
-
+#contenedor{
+    background-color: rgba(224, 235, 249, 0.489);
+}
 header{
     display: flex;
     flex-direction: column;
-    text-align: center;
-    /* background-image: url(../imagenes/celedon17.jpg); */
-    /* background-color: cornflowerblue; */
-    
+    text-align: center; 
 }
-
-
 main{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    text-align: center;
-    
-   
-    
+    text-align: center;  
 }
 main > div {
     flex: 50%;
     margin-top: 10vh; 
-    /* background-color: cornflowerblue; */
 }
-
 div a {
     text-decoration: none;
     color: black;
 }
-
 main div #boton_historia{
     flex: 100%;
     margin-top: 0; 
@@ -64,13 +57,4 @@ main div #boton_infantiles{
 }
 #boton_historia, #boton_programa,#boton_todos,#boton_infantiles{
     border: solid black 1px;
-}
-
-input[type=text], select, textarea{
-    width: 3vw;
-    height: 6vh;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 4vh;
-    resize: both;
 }

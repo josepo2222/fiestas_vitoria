@@ -1,3 +1,166 @@
-.fa-umbrella{
-    color: blue;
+html {
+    height: 100%;
+}
+body{
+    margin: 0;
+    font-size: 5vh;
+    background-color:rgb(102, 100, 237);
+    background-attachment: fixed;
+    background-image: url(../imagenes/celedon17.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+}
+#contenedor{
+    background-color: rgba(224, 235, 249, 0.489);
+    height: 100%;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    text-align: center; 
+}
+.idiomas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;  
+}
+.idiomas > div {
+    flex: 50%;
+    margin-top: 10vh; 
+}
+a {
+    text-decoration: none;
+    color: black;
+    
+}
+#esp a{
+    border: solid .1em royalblue;
+    background-color: whitesmoke;
+}
+
+#esp a:hover,#eng a:hover,#eus a:hover{
+    border: solid 0.3em royalblue;
+    border-radius: 1em;
+    background-color: gray;
+    transition: all 0.7s ease-in-out;
+    padding: 0.3em;
+}
+
+#eng a{
+    border: solid .1em royalblue;
+    background-color: whitesmoke;
+}
+#eus a{
+    border: solid .1em royalblue;
+    background-color: whitesmoke;
+}
+
+input[type=text], select, textarea{
+    width: 10vw;
+    height: 6vh;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: 4vh;
+    resize: both;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2px;
+    margin: 1em;
+
+}
+
+main{
+    display: flex;
+}
+main .row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+
+/* /////////////////////////// facebok /////////////////////////// */
+#grupo_face{
+    color: black;
+    transition: 2s;
+    font-size:1em;
+    margin-left: 1em;
+}
+#facebook{
+    color: white;
+    transition: transform .7s ease-in-out;
+    font-size: .7em;
+}
+#facebook:hover{
+    transform: rotate(360deg);
+}
+#grupo_face a:hover {
+    color: darkblue;
+    transition: 2s ;
+}
+
+/* /////////////////////////// twitter /////////////////////////// */
+#grupo_twitter{
+    color: black;
+    transition: 2s;
+    font-size:1em;
+}
+#grupo_twitter a:hover {
+    color: darkblue;
+    transition: 2s ;
+}
+#twitter{
+    color: white;
+    transition: transform .7s ease-in-out;
+    font-size: .7em;
+}
+#twitter:hover{
+    transform: rotate(360deg);
+}
+/* /////////////////////////// youtube /////////////////////////// */			
+.fa-youtube{
+    font-size:1em;
+    transition: 2s;
+}
+.fa-youtube:hover{
+    color: red;
+}
+
+#fiesta{
+    display: flex;
+
+}
+#fiesta h1{
+    width: 100%;
+}
+
+#idiomas{
+    position: absolute;
+    right: 1em;
+}
+#idiomas img{
+    height: 50px;
+    border:transparent 1px blue;
+    border-radius: 2em;
+    margin-top: 2em;
+}
+/*////////////// media queries ////////////*/
+@media (max-width: 1450px) {
+    #idiomas{
+        display: inline-block;
+        right: 30%;
+        top:-2em;
+    }
+}
+@media (max-width: 533px) {
+    #idiomas img{
+        height: 30px;
+    }
 }

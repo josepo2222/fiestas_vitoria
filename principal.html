@@ -5,56 +5,89 @@
 		<title>Page Title</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
-		<link href="css/stilo.css" rel="stylesheet">
+		<link href="css/stilo1.css" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/873c6f622e.js" crossorigin="anonymous"></script>
 	</head>
 
-	<body>
-		<header>
-			<div>
-				<h1>Fiestas Virgen Blanca 2022</h1>
-			</div>
-			<div>
-				<p>04-08-2022</p>
-				<p>Faltan</p>
-			</div>
-			<div>
-				Dias
-				<input type="text" id="dias" name="dias" value="20" disabled size="2">
-				&nbsp;
-				Horas
-				<input type="text" id="horas" name="horas" value="20" disabled size="2">
-				&nbsp;
-				Minutos
-				<input type="text" id="minutos" name="minutos" value="20" disabled size="2">
-				&nbsp;
-				Segundos
-				<input type="text" id="segundos" name="segundos" value="20" disabled size="2">
-			</div>
-			
-			
-		</header>
-		<main>
+		<body>
+			<div id="contenedor">
+				<header>
+					<div id="fiesta">
+						<h1>Fiestas Virgen Blanca 2022</h1>
+						<div id="idiomas">
+							<img src="imagenes/bandera-euskadi.svg" >
+							<img src="imagenes/espana.png" >
+							<img src="imagenes/united-kingdom.png" >
+						</div>
+					</div>
+					<div>
+						<p>04-08-2022</p>
+						<p>Faltan</p>
+					</div>
+					<div>
+						Dias
+						<input type="text" id="dias" name="dias" value="20" disabled size="2">
+						&nbsp;
+						Horas
+						<input type="text" id="horas" name="horas" value="20" disabled size="2">
+						&nbsp;
+						Minutos
+						<input type="text" id="minutos" name="minutos" value="20" disabled size="2">
+						&nbsp;
+						Segundos
+						<input type="text" id="segundos" name="segundos" value="20" disabled size="2">
+					</div>
+					
+					
+				</header>
+				<main>
+					<div class="row">
+						<div id="boton_historia">
+							<a href="#">Historia</a>
+						</div>
+						<div id="boton_programa">
+							<a href="#">Programa Completo</a>
+						</div>
+					</div>
+					<div id="actividades"><h2>Actividades</h2></div>
+					<div class="row">
+						<div id="boton_todas">
+							<a href="#">Todas</a>
+						</div>
+						<div id="boton_infantiles">
+							<a href="#">Infantiles</a>
+						</div>
+					</div>
 
-			<div id="boton_historia">
-				<a href="#">Historia</a>
+				</main>
+				<footer>
+					<div>
+						<div class="youtubeg">
+							<a href="#">
+								<i id="youtube" class="fa-brands fa-youtube"></i>
+							</a>
+						</div>
+					</div>
+					<div>
+						<span id="grupo_face" class='fa-stack fa-lg'>
+							<a href="https://es-es.facebook.com/gasteiz.vitoria">
+								<i id="circulo"  class='fas fa-circle fa-stack-1x'></i>
+								<i id="facebook" class='fab fa-facebook-f fa-stack-1x'></i>
+							</a>
+						</span>
+					</div>
+					<div>
+						<span id="grupo_twitter" class='fa-stack fa-lg '>
+							<a href="#">
+								<i id="circulo" class='fas fa-circle fa-stack-1x'></i>
+								<i id="twitter" class='fab fa-twitter fa-stack-1x'></i>
+							</a>
+						</span>
+					</div>
+					
+				</footer>
 			</div>
-			<div id="boton_programa">
-				<a href="#">Programa Completo</a>
-			</div>
-
-			<h2>Actividades</h2>
-			
-			<div id="boton_todas">
-				<a href="#">Todas</a>
-			</div>
-			<div id="boton_infantiles">
-				<a href="#">Infantiles</a>
-			</div>
-
-
-
 			<script>
-
 				const DATE_TARGET = new Date('08/04/2022 06:00 PM');
 				const DIAS = document.getElementById("dias");
 				const HORAS = document.getElementById("horas");
@@ -74,7 +107,7 @@
 					const REMAINING_DAYS = Math.floor(DURATION / MILLISECONDS_OF_A_DAY);
 					const REMAINING_HOURS = Math.floor((DURATION % MILLISECONDS_OF_A_DAY) / MILLISECONDS_OF_A_HOUR);
 					const REMAINING_MINUTES = Math.floor((DURATION % MILLISECONDS_OF_A_HOUR) / MILLISECONDS_OF_A_MINUTE);
-    				const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
+					const REMAINING_SECONDS = Math.floor((DURATION % MILLISECONDS_OF_A_MINUTE) / MILLISECONDS_OF_A_SECOND);
 
 					DIAS.value=REMAINING_DAYS;
 					HORAS.value=REMAINING_HOURS;
@@ -82,11 +115,26 @@
 					SEGUNDOS.value=REMAINING_SECONDS;
 				}
 
-				
 				setInterval(updateCountdown, 1000);
 				
+				
+				let youtubeIcon = document.querySelector("i.fa-youtube");
+					youtubeIcon.addEventListener("mouseover",gira);
+					youtubeIcon.addEventListener("mouseout",nogira);
+				function gira(){
+					if (!youtubeIcon.classList.contains("fa-flip")){
+						youtubeIcon.classList.add("fa-flip");
+						youtubeIcon.style.animationIterationCount = 1;
+						youtubeIcon.style.animationDuration="1.5s";
+					}
+				}
+
+				function nogira(){
+					if (youtubeIcon.classList.contains("fa-flip")){
+						youtubeIcon.classList.remove("fa-flip");
+					}
+				}
 
 			</script>
-		</main>
-	</body>
+		</body>
 </html>
