@@ -13,48 +13,8 @@ body{
     background-size: cover;
         
 }
-#contenedor{
-    background-color: rgba(224, 235, 249, 0.489);
-}
+
 header{
     display: flex;
-    flex-direction: column;
     text-align: center; 
-}
-main{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;  
-}
-main > div {
-    flex: 50%;
-    margin-top: 10vh; 
-}
-div a {
-    text-decoration: none;
-    color: black;
-}
-main div #boton_historia{
-    flex: 100%;
-    margin-top: 0; 
-}
-main div #boton_programa{
-    flex: 100%;
-    margin-top: 0; 
-}
-main > h2{
-    flex: 100%;
-    margin-bottom: 0;
-}
-main div #boton_todos{
-    flex: 100%;
-    margin-top: 0; 
-}
-main div #boton_infantiles{
-    flex: 100%;
-    margin-top: 0; 
-}
-#boton_historia, #boton_programa,#boton_todos,#boton_infantiles{
-    border: solid black 1px;
 }
