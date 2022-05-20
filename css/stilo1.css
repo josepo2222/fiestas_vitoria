@@ -31,31 +31,23 @@ header{
     flex: 50%;
     margin-top: 10vh; 
 }
+
 a {
     text-decoration: none;
     color: black;
-    
 }
-#esp a{
+
+#esp a, #eus a, #eng a, #boton_historia a, #boton_programa a, #boton_todas a, #boton_infantiles a{
     border: solid .1em royalblue;
     background-color: whitesmoke;
 }
 
-#esp a:hover,#eng a:hover,#eus a:hover{
+#esp a:hover, #eng a:hover, #eus a:hover, #boton_historia a:hover, #boton_programa a:hover, #boton_todas a:hover, #boton_infantiles a:hover{
     border: solid 0.3em royalblue;
     border-radius: 1em;
     background-color: gray;
     transition: all 0.7s ease-in-out;
     padding: 0.3em;
-}
-
-#eng a{
-    border: solid .1em royalblue;
-    background-color: whitesmoke;
-}
-#eus a{
-    border: solid .1em royalblue;
-    background-color: whitesmoke;
 }
 
 input[type=text], select, textarea{
@@ -77,13 +69,19 @@ footer{
 
 main{
     display: flex;
+    flex-direction: column;
+    
 }
 main .row{
     display: flex;
     flex-direction: row;
+    flex:100%;
+    justify-content: space-around;
 }
 
-
+.linea-vacia{
+    height: 2em;
+}
 
 
 /* /////////////////////////// facebok /////////////////////////// */
