@@ -1,0 +1,341 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+body{
+    background-color: black;
+    background-image: url(../imagenes/gotas\ sangre.png);
+    background-size:cover ;
+    background-repeat:no-repeat ;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+.contenedor{
+    display: table;
+    width: 1200px;
+    margin: auto;
+    color: red;
+    border:groove 15px whitesmoke;
+    background-color: black;
+}
+nav ol li .elegido{
+    background-color: dimgray;
+}
+ol li .elegido{
+    background-color: dimgray;
+}
+h1{
+    color: whitesmoke;
+    font-size: 15px;
+    font-weight: 100;
+}
+.cabecera img{
+    max-height: 100px; 
+}
+.cabecera{
+    display: table-row; 
+    text-align: center;
+    vertical-align: bottom;   
+}
+.cabecera p{
+    color: rgb(248, 244, 244);
+}
+header{
+    text-align: center;
+    justify-content: center;
+}
+nav ol{
+    list-style: none;
+    display: flex;
+    border-bottom: groove 15px whitesmoke;
+    margin: 0px;
+    
+}
+nav ol li{
+    border-right: solid 5px whitesmoke;
+}
+.menu2{
+    position: sticky;
+    top: 54px;
+}
+.menu2 li {
+    border-right: solid 5px whitesmoke;       
+}
+li:first-child{
+    border-left: solid 5px whitesmoke;
+} 
+
+ol li{
+    border-right: solid 5px black;
+}
+ol{
+    list-style: none;
+    display: flex;
+    margin: 0px;
+}
+li a{
+    background-color: #772703;
+    color: #dddddd;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+li a:hover{
+    background-color: dimgray;
+}
+nav li a{
+    background-color: #772703;
+    color: #dddddd;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+nav li a:hover{
+    background-color: dimgray;
+}
+nav{
+    display: table-row;
+    position: sticky;
+    top: 0px;
+    background-color: black;
+}
+.desplegableli:hover .desplegable{
+    display: block;
+}
+.desplegable{
+    display: none;
+    position: absolute;
+
+}
+#contenedor1{
+    display: table-row;
+    max-height: 500px;
+}
+#portada{
+    height: 100%;
+    width: 100%;
+    border-bottom: groove 10px white;
+}
+#titulo{
+    display: table-row;
+    text-align: center;
+}
+#personajes{
+    align-items: center;
+    border-bottom: solid 5px whitesmoke;
+    border-top: solid 5px whitesmoke;
+}
+#personajes #centp img{
+    width: 650px;
+    height: 399px;
+}
+#centp{
+    width: 300px;
+    height: auto;
+    background-color: dimgray;
+}
+#izqp{ 
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px;
+    color: whitesmoke;
+}
+#derp{
+    vertical-align: middle;
+    display: table-cell;
+}
+#derp img{
+    width: 300px;
+    align-content: center;
+}
+#centp{
+    display: table-cell;
+    width: 650px;
+    height: 399px;
+}
+footer{
+    background: black;
+    color: whitesmoke;
+}
+.celdafooter1{
+    display: table-cell;
+    width: 20%;
+}
+.celdafooter2{
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 100px;
+    text-align: right;
+    width: 80%;
+    
+}
+footer img{
+    max-height: 70px;
+    background: white;
+    border-bottom:solid 5px white;
+    border-top: solid 5px black;
+    margin-left: 10px;
+}
+#titulosinopsis{
+    display: table-row;
+    text-align: center;
+    
+}
+#sinopsis{
+    margin-left: 10px;
+}
+#contenido_sinopsis{
+    display: table-row;
+    color: whitesmoke;
+}
+#contenido_sinopsis p{
+    padding: 15px;
+}
+#contenido_sinopsis2{
+    display: table-cell;
+    text-align: center;
+}
+#luchadoressinopsis{
+    display: table-row;
+    text-align: center;
+}
+#imagensinopsisluchadores{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.imagen-personaje{
+    display: table-cell;
+    text-align: center;
+    width: 50%;
+}
+.texto-personaje,.texto-personaje2{
+    display: table-cell;
+    width: 50%;
+    text-align: center;
+    vertical-align: top;
+    background-color: black;
+    padding: 20px;
+    line-height: 30px;
+    color: white;
+}
+.separacion ,.titulo_personaje{
+    display:table-row; 
+    width:1200px;
+    text-align: center;
+    background-color: black;  
+}
+.separacion h2{
+    margin-bottom: 0px;
+}
+.margeninferior{
+    border-bottom: groove 10px whitesmoke;
+}
+.imagen-personaje-ajuste{
+    margin: 10px;
+    width: 50%;   
+}
+.imagen-personaje-ajuste2{
+    margin: 10px;
+    width: 80%;  
+}
+.celda-escena{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+.celdavacia,#texto-juego,#imagen-juego{
+    display: table-cell;
+}
+#texto-juego{
+    vertical-align: middle;
+    padding: 10px;
+    color: white;
+}
+.bordebajo{
+    border-bottom: groove 10px white;
+}
+#texto-diferencias{
+    display: table-cell;
+    vertical-align: top;
+    width: 50%;
+}
+#texto-diferencias p{
+    color: whitesmoke;
+}
+#texto-diferencias p,#texto-diferencias h6{
+    margin-left: 20px;
+    margin-right: 40px;
+}
+#imagen-diferencias{
+    display: table-cell;
+    width: 50%;
+}
+#imagen-diferencias img{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.titulo{
+    display: table-row;
+    text-align: center;
+}
+h6{
+    font-size: 20px;
+    margin-bottom: 0px;
+}
+.titulopersonaje{
+    display: table-row;
+    text-align: center;
+}
+.texto-diferencias-p{
+    display: table-cell;
+    vertical-align:middle ;
+}
+.texto-diferencias-p p{
+    margin-left: 10px;
+    margin-right: 30px;
+    color: whitesmoke;
+}
+.imagen-diferencias-p{
+    display: table-cell;
+}
+.imagen-diferencias-p img[alt*=personaje]{
+    margin-right: 15px;
+    box-shadow: -5px 10px 30px 12px rgba(159, 6, 6, 0.50);
+}
+.bordevacio{
+    padding: 10px;
+}
+#trailer,#trailerjuego{
+    display: table-row; 
+    text-align: center;
+    height: 300px;
+}
+#textotrailer,#textotrailerjuego{
+    display: table-row;
+    text-align: center;
+    
+}
+#trailerv2{
+    padding-bottom: 20px;
+}
+#trailerv1,#trailerv2{
+    height: 315px;
+    width: 560px;
+}
+.pdescripcion{
+    text-align: left;
+}
+.flecha{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    font-size:30px;
+    font-weight: bold;
+    background-color: black;
+    border: groove 10px white;
+}
+.flecha a{   
+    color: whitesmoke;
+}
+#texto-juego h3{
+    color: red;
+}
