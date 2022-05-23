@@ -1,6 +1,3 @@
-.fa-umbrella{
-    color: blue;
-}
 
 body{
     margin: 0;
@@ -17,4 +14,23 @@ body{
 header{
     display: flex;
     text-align: center; 
+    flex-direction: row;
+}
+
+.fa-umbrella{
+    color: blue;
+    display: inline-block;
+}
+
+header ul{
+    display: flex;
+}
+.desplegable{
+    display: none;
+    
+}
+
+.desplegar:hover .desplegable{
+    display: flex;
+    flex-direction: column;
 }
