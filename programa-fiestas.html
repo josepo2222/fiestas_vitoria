@@ -2,34 +2,766 @@
 
 <html>
 	<head>
-		<title>Page Title</title>
+	  <title>Page Title</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="initial-scale=1.0">
 		<link href="css/stilo-general.css" rel="stylesheet">
 		<script src="https://kit.fontawesome.com/873c6f622e.js" crossorigin="anonymous"></script>
 	</head>
 
-	<body>
-		<header>
-			<div id="simbolo">
-				<i class="fa-solid fa-umbrella"></i>
-			</div>
-			
-			<ul id="navegador">
-				<li><a href="#">Historia</a></li>
-				<li class="desplegable-li">Actividades
-					<div class="desplegable">
-						<a href="#">Todos</a>
-						<a href="#">Infantiles</a>
-					</div>
-				</li>
-				<li><a href="#">Programa Fiestas</a></li>
+<body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/"><i class="fa-solid fa-umbrella"></i></a>
+      </div>
+	  	<div id="idiomas">
+			<img src="imagenes/bandera-euskadi.svg" >
+			<img src="imagenes/espana.png" >
+			<img src="imagenes/united-kingdom.png" >
+		</div>
+      <ul class="nav-links">
+        <div class="menu">
+          <li><a href="#">Historia</a></li>
+          <li class="actividades">
+            <a href="#">Actividades</a>
+            <ul class="dropdown">
+              <li><a href="#">Generales </a></li>
+              <li><a href="#">Infantiles</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Programa Fiestas</a></li>
+        </div>
+      </ul>
+    </nav>
 
+	<main>
+		<div class="navegador-dias">
+			<ul>
+				<li><a href="#">Jueves 4</a></li>
+				<li><a href="#">Viernes 5</a></li>
+				<li><a href="#">Sabado 6</a></li>
+				<li><a href="#">Domingo 7</a></li>
+				<li><a href="#">Lunes 8</a></li>
+				<li><a href="#">Martes 9</a></li>
 			</ul>
-		</header>
-		<main>
+		</div>
+		<article>
+			<div>
+				<h2>Programa del Jueves 4 agosto 2022</h2>
+				<p>18:00 Bajada de Celedón: Txupinazo</p>
+
+				<p>18:00 Lanzamiento del Chupinazo anunciador de las Fiestas 2019 y descenso de Celedón</p>
+
+				<p>19:00 Bailables en la Florida. Orquesta Galea</p>
+
+				<p>19:30 Solemnes Vísperas en honor de la Virgen Blanca, en San Miguel</p>
+
+				<p>19:30 Baile de la Comparsa de Gigantes, Cabezudos, Caballos y Sotas, bajo las escaleras de San Miguel</p>
+
+				<p>20:30 Larrain Dantza y Txulalai, en la Plaza del Machete</p>
+
+				<p>21:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>22:00 Procesión del Rosario de los Faroles</p>
+
+				<p>22:00 Concierto en las txosnas: Tara</p>
+
+				<p>22:30 Perfectos desconocidos. Teatro Principal Antzokia</p>
+
+				<p>23:30 Toros de fuego en la calle Olaguibel</p>
+
+				<h2>Programa del Viernes 5 agosto 2022</h2>
+				<p>00:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>00:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>00:00 Verbena en la Plaza del Arca: Drindots</p>
+
+				<p>00:00 Concierto en la Plaza de los Fueros: Huntza</p>
+
+				<p>00:00 Concierto en las txosnas: Trikoma</p>
+
+				<p>00:30 Orquestas en la plaza de España: La Mundial</p>
+
+				<p>02:00 Concierto en las txosnas: Skabidean & The Black Birds</p>
+
+				<p>04:00 Concierto en las txosnas: Aiaraldeko Soinu Sistema</p>
+
+				<p>07:00 Procesión del Rosario de la Aurora</p>
+
+				<p>08:00 Misa de la Aurora</p>
+
+				<p>09:00 Ofrenda floral y aurresku de honor a la Virgen Blanca por todas las cuadrillas de blusas y neskas</p>
+
+				<p>09:00 Dianas-Pasacalles en la Plaza de España</p>
+
+				<p>10:00 Campeonato de Bolos. Categoría juvenil. Bolera de los Fueros</p>
+
+				<p>10:30 Feria de Artesanía y Gastronomía Popular</p>
+
+				<p>10:30 Misa Pontifical en San Miguel</p>
+
+				<p>10:30 Vaquillas en el Iradier Arena</p>
+
+				<p>10:30 Campeonato de Bolos. Categoría femenina. Bolera de los Fueros</p>
+
+				<p>10:30 Campeonato de Pelota Vasca de Fiestas de la Virgen Blanca</p>
+
+				<p>10:30 Campeonato de Pelota Femenina 'Green Capital'</p>
+
+				<p>11:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>11:00 Campeonato de Bolos. Categoría absoluta. Bolera de los Fueros</p>
+
+				<p>11:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: salida de la calle San Prudencio</p>
+
+				<p>11:30 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: baile de la Comparsa de Gigantes, en las escaleras de San Miguel</p>
+
+				<p>11:30 Visita guiada: Lo mejor de Vitoria + Museo Fournier de Naipes</p>
+
+				<p>12:00 Gigantes, Cabezudos, Caballos y Sotas: salida de la plaza de la Virgen Blanca</p>
+
+				<p>12:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>12:00 Gasteizko Zortzikoa en la Plaza de España</p>
+
+				<p>12:00 Kalejira desde la Plaza España</p>
+
+				<p>12:00 Torneo Virgen Blanca de Herri Kirolak, Plaza de los Fueros</p>
+
+				<p>12:30 Trikitixa en la Plaza del Machete</p>
+
+				<p>12:30 Espectáculo infantil en la plaza del Conde de Peñaflorida: Trotamundos</p>
+
+				<p>12:30 Gargantúa en la plaza del Conde de Peñaflorida</p>
+
+				<p>12:30 Música de cámara en Luis Aranburu: Montserrat Sánchez, Txaro Martínez y Amaia Rodriguez</p>
+
+				<p>13:00 Homenaje a la Ikurriña, con la actuación de Algara Dantza Taldea</p>
+
+				<p>13:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: salida desde la Virgen Blanca</p>
+
+				<p>13:30 Bertso-saioak en la plaza del Machete</p>
+
+				<p>16:30 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>16:30 Paseíllo de ida de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>17:00 Paseíllo de ida de la Comisión de Blusas y Neskas</p>
+
+				<p>18:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>18:00 Mujer pelotari. Mano, pala y cesta. Frontón portátil. Mendizorrotza</p>
+
+				<p>18:00 Gargantúa en el Parque del Prado</p>
+
+				<p>18:00 Jotas en la Plaza del Conde de Peñaflorida: Jotas de Aragón</p>
+
+				<p>18:00 Vaquillas Txiki en el Iradier Arena</p>
+
+				<p>18:30 VI Campeonato de Bolo Alavés para Cuadrillas de Blusas y Neskas</p>
+
+				<p>19:00 Bailables en la Florida. Orquesta Pensilvania</p>
+
+				<p>19:00 Concierto en los jardines de Falerina: Paradixo</p>
+
+				<p>19:30 Rincón del Humor: 'Monolokos'</p>
+
+				<p>19:30 Concierto de txistularis en el Machete</p>
+
+				<p>19:30 Mini Disco con Erre Produkzioak, en la Plaza del Conde de Peñaflorida</p>
+
+				<p>20:00 Paseíllo de vuelta de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>20:00 Perfectos desconocidos. Teatro Principal Antzokia</p>
+
+				<p>20:30 Paseíllo de vuelta de la Comisión de Blusas y Neskas</p>
+
+				<p>20:30 Concierto en los jardines de Falerina: Kultura Reggae Band</p>
+
+				<p>20:30 Larrain Dantza y Txulalai, en la Plaza del Machete</p>
+
+				<p>22:00 Concierto en las txosnas: Dupla</p>
+
+				<p>22:30 Perfectos desconocidos. Teatro Principal Antzokia</p>
+
+				<p>23:00 Variedades en la plaza de la Provincia: Puro relajo</p>
+
+				<p>23:00 Pirotecnia del Mediterráneo (Valencia). XVII Muestra Internacional de Espectáculos Pirotécnicos de Vitoria-Gasteiz</p>
+
+				<p>23:30 Toros de fuego en la calle Olaguibel</p>
+
+				<p>23:50 Margodisco con DJ Krossko en Jardines Obispo Fernández Pierola (hasta las 02:30)</p>
+
+				<h2>Programa del sabado 6 agosto 2022</h2>
+				<p>00:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>00:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>00:00 Verbena en la Plaza del Arca: Lisker Taldea</p>
+
+				<p>00:00 Concierto en la Plaza del Machete: Joseba Tapia</p>
+
+				<p>00:00 Concierto en la Plaza de los Fueros: La M.O.D.A.</p>
+
+				<p>00:30 Orquestas en la plaza de España: Nueva Alaska</p>
+
+				<p>01:00 Concierto en las Txosnas: Zea Mays</p>
+
+				<p>03:30 Concierto en las txosnas: DJ Elepunto</p>
+
+				<p>10:00 Visita al cementerio, ofrenda de flores y responso por los Celedones de Oro fallecidos</p>
+
+				<p>10:00 Campeonato de Bolos. Categoría juvenil. Bolera de los Fueros</p>
+
+				<p>10:30 Feria de Artesanía y Gastronomía Popular</p>
+
+				<p>10:30 Campeonato de Pelota Femenina 'Green Capital'</p>
+
+				<p>10:30 Campeonato de Pelota Vasca de Fiestas de la Virgen Blanca</p>
+
+				<p>10:30 Campeonato de Bolos. Categoría femenina. Bolera de los Fueros</p>
+
+				<p>10:30 Vaquillas en el Iradier Arena</p>
+
+				<p>11:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>11:00 XV Concurso de pintura para niños y niñas</p>
+
+				<p>11:00 Txori-pote solidario a favor de AECC en Juan de Bautista con Heraclio Fournier</p>
+
+				<p>11:00 Campeonato de Bolos. Categoría absoluta. Bolera de los Fueros</p>
+
+				<p>11:00 Visita guiada al Casco Medieval organizada por la Oficina de Turismo</p>
+
+				<p>11:30 Misa, aurresku y ofrenda floral por los Celedones de Oro fallecidos</p>
+
+				<p>11:30 Visita guiada al Casco Medieval organizada por la Oficina de Turismo (en euskara)</p>
+
+				<p>12:00 XV. Basatilandia, juegos infantiles en la plaza de los Celedones de Oro</p>
+
+				<p>12:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>12:00 Torneo Virgen Blanca de Herri Kirolak, Plaza de los Fueros</p>
+
+				<p>12:00 Dianas-Pasacalles en la Plaza de España</p>
+
+				<p>12:00 Kalejira desde la Plaza España</p>
+
+				<p>12:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: salida de la calle San Prudencio</p>
+
+				<p>12:00 IV Descenso de Goitiberas de Vitoria-Gasteiz</p>
+
+				<p>12:00 Master class de Zumba, en la plaza del Arca</p>
+
+				<p>12:30 Eucaristía con los enfermos, aurresku y ofrenda floral ante la hornacina</p>
+
+				<p>12:30 Trikitixa en la Plaza del Machete</p>
+
+				<p>12:30 Espectáculo infantil en la plaza del Conde de Peñaflorida: Ameztu Antzerkia</p>
+
+				<p>12:30 Música de cámara en Luis Aranburu: Magna Boskotea</p>
+
+				<p>12:30 Gargantúa en la plaza del Conde de Peñaflorida</p>
+
+				<p>13:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: salida de Santa María</p>
+
+				<p>13:30 Bertso-saioak en la plaza del Machete</p>
+
+				<p>16:30 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>16:30 Paseíllo de ida de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>17:00 Paseíllo de ida de la Comisión de Blusas y Neskas</p>
+
+				<p>17:00 Yinkana, en Jardines Maurice Ravel</p>
+			
+				<p>17:00 Visita guiada al Casco Medieval organizada por la Oficina de Turismo</p>
+
+				<p>17:30 Visita guiada al Casco Medieval organizada por la Oficina de Turismo (en euskara)</p>
+
+				<p>18:00 Gargantúa en el Parque del Prado</p>
+
+				<p>18:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>18:00 Jotas en la Plaza del Conde de Peñaflorida: Voces de Navarra</p>
+
+				<p>18:00 Pelota adaptada. Pelota en silla de ruedas. Frontón portátil. Mendizorrotza</p>
+
+				<p>19:00 Bailables en la Florida. Orquesta Pérgola</p>
+
+				<p>19:00 Concierto en los jardines de Falerina: La Reverso</p>
+
+				<p>19:30 Rincón del Humor: 'Monologos Comedy'</p>
+
+				<p>19:30 Danza en el Machete: La Musgaña</p>
+
+				<p>19:30 Mini Disco con Sustrai Doinuak, en la Plaza del Conde de Peñaflorida</p>
+
+				<p>20:00 Paseíllo de vuelta de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>20:00 Conductas alteradas. Teatro Principal Antzokia</p>
+
+				<p>20:30 Paseíllo de vuelta de la Comisión de Blusas y Neskas</p>
+
+				<p>20:30 Larrain Dantza y Txulalai, en la Plaza del Machete</p>
+
+				<p>20:30 Concierto en los jardines de Falerina: Delenda Est</p>
+
+				<p>21:00 Visita Guiada: Vitoria de Leyenda I</p>
+
+				<p>22:00 Concierto en las txosnas: Nerabe</p>
+
+				<p>22:30 Conductas alteradas. Teatro Principal Antzokia</p>
+
+				<p>23:00 Variedades en la plaza de la Provincia: Dos pájaros y un trío</p>
+
+				<p>23:00 PirotecniaTomás (Castellón). XVII Muestra Internacional de Espectáculos Pirotécnicos de Vitoria-Gasteiz</p>
+
+				<p>23:30 Toros de fuego en la calle Olaguibel</p>
+
+				<h2>Programa del domingo 7 agosto 2022</h2>
+				<p>00:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>00:00 Verbena con Joselu Anayak en la Plaza del Arca</p>
+
+				<p>00:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>00:00 Verbena en la Plaza del Arca: Joselu Anaiak</p>
+
+				<p>00:00 Concierto en la Plaza del Machete: Modus Operandi</p>
+
+				<p>00:00 Concierto en la Plaza de los Fueros: Fangoria</p>
+			
+				<p>00:00 Concierto en las txosnas: Tribade</p>
+
+				<p>00:30 Kalejira por la zona centro con Ttek! Electrotxaranga</p>
+
+				<p>00:30 Orquestas en la plaza de España: Evasión</p>
+
+				<p>02:00 Concierto en las Txosnas: The Baboon Show</p>
+
+				<p>04:00 Concierto en las txosnas: Dj Komando Klitorix</p>
+
+				<p>10:00 Campeonato de Bolos. Categoría juvenil. Bolera de los Fueros</p>
+
+				<p>10:30 Campeonato de Bolos. Categoría femenina. Bolera de los Fueros</p>
+
+				<p>10:30 Feria de Artesanía y Gastronomía Popular</p>
+
+				<p>10:30 XXV Tu foto Txiki, en la plaza de España</p>
+
+				<p>10:30 Vaquillas en el Iradier Arena</p>
+
+				<p>10:30 Campeonato de Pelota Femenina 'Green Capital'</p>
+
+				<p>10:30 Campeonato de Pelota Vasca de Fiestas de la Virgen Blanca</p>
+
+				<p>11:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>11:00 Zoroakeguna: juegos infantiles y degustación de pincho en la Plaza de los Celedones de Oro</p>
+
+				<p>11:00 Ofrenda floral de los niños y niñas de Vitoria-Gasteiz, en la iglesia de San Miguel</p>
+
+				<p>11:00 Ofrenda floral de los niños y niñas de Vitoria-Gasteiz</p>
+
+				<p>11:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: salida de la calle San Prudencio</p>
+
+				<p>11:00 Campeonato de Bolos. Categoría absoluta. Bolera de los Fueros</p>
+
+				<p>11:00 Visita guiada al Casco Medieval organizada por la Oficina de Turismo</p>
+
+				<p>11:30 Txori-pote solidario a favor de AECC en Los Manteli con José Mardones</p>
+
+				<p>11:30 Ofrenda floral y aurresku de honor de Edurne y Celedón Txiki</p>
+
+				<p>11:30 Visita guiada al Casco Medieval organizada por la Oficina de Turismo (en euskara)</p>
+
+				<p>12:00 Twister para niñas, niños y mayores, en la plaza de la Provincia</p>
+
+				<p>12:00 Pintxo-pote solidario a favor de APASOS, en la Plaza del Arca</p>
+
+				<p>12:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>12:00 Descenso de Edurne y Celedón txiki</p>
+
+				<p>12:00 Torneo Virgen Blanca de Herri Kirolak, Plaza de los Fueros</p>
+
+				<p>12:00 Dianas-Pasacalles en la Plaza de España</p>
+
+				<p>12:00 Kalejira desde la Plaza España</p>
+
+				<p>12:00 Alboka, Txirula y Txalaparta itinerante desde la calle San Prudencio</p>
+
+				<p>12:30 Degustación de jamón y Falzue en la plaza de la Provincia</p>
+
+				<p>12:30 Gargantúa en la plaza del Conde de Peñaflorida</p>
+
+				<p>12:30 Trikitixa en la Plaza del Machete</p>
+
+				<p>12:30 Espectáculo infantil en la plaza del Conde de Peñaflorida: Eidabe</p>
+
+				<p>13:00 XV Bandera de Traineras Premio 'Nuestra Señora la Virgen Blanca', en la plaza de la Provincia</p>
+
+				<p>13:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: salida desde la Virgen Blanca</p>
+
+				<p>13:30 Bertso-saioak en la plaza del Machete</p>
+
+				<p>13:45 Baile de la Comparsa de Gigantes, Cabezudos, Caballos y Sotas e itinerante desde el Kiosko de la Florida</p>
+
+				<p>16:30 Feria de las fiestas de la Virgen Blanca</p>
+		
+				<p>16:30 Paseíllo de ida de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>17:00 Paseíllo de ida de la Comisión de Blusas y Neskas, con la participación de Edurne y Celedón Txiki</p>
+
+				<p>17:00 Visita guiada al Casco Medieval organizada por la Oficina de Turismo</p>
+
+				<p>17:30 IX Festival de Pelota Mano Trofeo Luken, en el frontón de Los Fueros</p>
+
+				<p>17:30 Visita guiada al Casco Medieval organizada por la Oficina de Turismo (en euskara)</p>
+
+				<p>18:00 Pelota txikia. Magia, talleres y juego para niñas y niños (6-12 años). Frontón portátil. Mendizorrotza</p>
+
+				<p>18:00 Fiesta de los txikis con Edurne y Celedón Txiki en la Plaza Green Capital</p>
+
+				<p>18:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>18:00 Gargantúa en el Parque del Prado</p>
+
+				<p>18:00 Jotas en la Plaza del Conde de Peñaflorida: Acordes Navarros</p>
+
+				<p>18:30 III. Gran Chocolatada 'Gasteizko Jaiak', en la plaza de la Virgen Blanca</p>
+
+				<p>18:30 VI Campeonato de Bolo Alavés para Cuadrillas de Blusas y Neskas</p>
+
+				<p>19:00 Bailables en la Florida. Orquesta Yatagán</p>
+
+				<p>19:30 Rincón del Humor. Comandante Lara & Cia</p>
+
+				<p>19:30 Danza en el Machete: Gasteiz Big Band & Udal Txistulari Band</p>
+
+				<p>19:30 Mini Disco con Lanku, en la Plaza del Conde de Peñaflorida</p>
+
+				<p>20:00 Paseíllo de vuelta de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>20:00 Conductas alteradas. Teatro Principal Antzokia</p>
+
+				<p>20:30 Paseíllo de vuelta de la Comisión de Blusas y Neskas, con la participación de Edurne y Celedón Txiki</p>
+
+				<p>20:30 Larrain Dantza y Txulalai, en la Plaza del Machete</p>
+
+				<p>22:30 Conductas alteradas. Teatro Principal Antzokia</p>
+
+				<p>23:00 Pirotecnia Astondoa (Bizkaia). XVII Muestra Internacional de Espectáculos Pirotécnicos de Vitoria-Gasteiz</p>
+
+				<p>23:00 Variedades en la plaza de la Provincia: Demode Quartet</p>
+
+				<p>23:30 Toros de fuego en la calle Olaguibel</p>
+
+				<h2>Programa del lunes 8 agosto 2022</h2>
+				<p>00:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>00:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>00:00 Concierto en la Plaza de los Fueros: Gatillazo</p>
+
+				<p>00:00 Verbena en la Plaza del Arca: Koxkor</p>
+
+				<p>00:00 Concierto en la Plaza del Machete: Nøgen</p>
+
+				<p>00:00 Concierto en las txosnas: Anita Parker</p>
+
+				<p>00:30 Orquestas en la plaza de España: Vendetta</p>
+
+				<p>01:00 Kalejira Txistulari, desde plaza de la Provincia hasta calle Cuchillería</p>
+
+				<p>02:00 Concierto en las Txosnas: Esne Beltza</p>
+
+				<p>04:00 Concierto en las txosnas: DJ Bitsa jaia</p>
+
+				<p>09:00 Misa, ofrenda floral y aurresku de honor de las Neskas y Blusas veteranos</p>
+
+				<p>10:00 Campeonato de Bolos. Categoría juvenil. Bolera de los Fueros</p>
+
+				<p>10:00 Herri kirolak en la calle Venezuela (12-14)</p>
+
+				<p>10:00 III Cata popular de vinos Eguren Ugarte</p>
+
+				<p>10:00 IV Campeonato del Mundo de Lanzamiento de Bota de Vino Celedón, en la plaza España</p>
+
+				<p>10:00 XXVI Concurso Gastronómico para Cuadrillas, en la plaza España</p>
+
+				<p>10:00 XVI Quiniela de catadores de vino de Rioja Alavesa, en la plaza España</p>
+
+				<p>10:00 Dianas-Pasacalles en la Plaza de España</p>
+
+				<p>10:30 Feria de Artesanía y Gastronomía Popular</p>
+
+				<p>10:30 Campeonato de Bolos. Categoría femenina. Bolera de los Fueros</p>
+
+				<p>10:30 VII Pintxo-pote solidario a favor de Enach Asociación, en la Plaza del Arca</p>
+
+				<p>10:30 Campeonato de Pelota Femenina 'Green Capital'</p>
+
+				<p>10:30 Vaquillas en el Iradier Arena</p>
+
+				<p>10:30 Campeonato de Pelota Vasca de Fiestas de la Virgen Blanca</p>
+
+				<p>11:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>11:00 Campeonato de Bolos. Categoría absoluta. Bolera de los Fueros</p>
+
+				<p>11:00 Margotxef, actividad infantil en la plaza de la Virgen Blanca</p>
+
+				<p>11:00 Visita guiada al Casco Medieval organizada por la Oficina de Turismo</p>
+
+				<p>11:30 Visita guiada al Casco Medieval organizada por la Oficina de Turismo (en euskara)</p>
+
+				<p>12:00 XIII edición de Juegos Infantiles en la Plaza del Arca</p>
+
+				<p>12:00 XXV Gambada Popular, en la calle Bastiturri</p>
+
+				<p>12:00 Torneo Virgen Blanca de Herri Kirolak, Plaza de los Fueros</p>
+
+				<p>12:00 Fiesta txiki de la espuma, en la plaza Celedones de Oro</p>
+
+				<p>12:00 XXIV Concurso de baile 'El Meneito Veterano', en la plaza de la Provincia</p>
+
+				<p>12:00 Cuadrilla Txirrita: exposición de pancartas en el Farolón</p>
+
+				<p>12:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>12:00 Dianas-Pasacalles en la Plaza de España</p>
+
+				<p>12:00 Kalejira desde la Plaza España</p>
+
+				<p>12:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: itinerante desde la calle San Prudencio</p>
+
+				<p>12:00 Torneo Virgen Blanca de Herri Kirolak, Plaza de los Fueros</p>
+
+				<p>12:30 Trikitixa en la Plaza del Machete</p>
+
+				<p>12:30 Gargantúa en la plaza del Conde de Peñaflorida</p>
+
+				<p>12:30 Espectáculo infantil en la plaza del Conde de Peñaflorida: Mago Madiber</p>
+
+				<p>13:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: itinerante desde la Residencia San Prudencio</p>
+
+				<p>13:00 Txistu en la Plaza de Santa María</p>
+
+				<p>13:30 Bertso-saioak en la plaza del Machete</p>
+
+				<p>16:30 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>16:30 Paseíllo de ida de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>17:00 Paseíllo de ida de la Comisión de Blusas y Neskas</p>
+
+				<p>17:00 Visita guiada al Casco Medieval organizada por la Oficina de Turismo</p>
+
+				<p>17:30 Visita guiada al Casco Medieval organizada por la Oficina de Turismo (en euskara)</p>
+
+				<p>18:00 Torneos Goxuas. Frontón portátil. Mendizorrotza</p>
+
+				<p>18:00 Herri kirolak infantil en la plaza de la Provincia</p>
+
+				<p>18:00 Karaoke solidario Hegotarrak, a favor de ASPASOR, en la plaza Green Capital</p>
+
+				<p>18:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>18:00 Jotas en la Plaza del Conde de Peñaflorida: Voces del Ebro</p>
+
+				<p>18:00 Gargantúa en el Parque del Prado</p>
+
+				<p>18:30 VI Campeonato de Bolo Alavés para Cuadrillas, en la bolera de Los Fueros</p>
+
+				<p>19:00 Bailables en la Florida. Orquesta Jamaica</p>
+
+				<p>19:30 Rincón del Humor. 'Bocabeats Comedia' (en euskera)</p>
+
+				<p>19:30 Danza en el Machete: Kolme Katu</p>
+			
+				<p>19:30 Mini Disco con Dantza Saltsa, en la Plaza del Conde de Peñaflorida</p>
+
+				<p>20:00 Paseíllo de vuelta de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>20:00 Aiguantulivinamérica 2. Goyo Jiménez.Teatro Principal Antzokia</p>
+
+				<p>20:30 Paseíllo de vuelta de la Comisión de Blusas y Neskas</p>
+
+				<p>20:30 Larrain Dantza y Txulalai, en la Plaza del Machete</p>
+
+				<p>21:00 Visita Guiada: Vitoria de Leyenda II</p>
+
+				<p>22:00 Concierto en las Txosnas: Nafarroa 1512</p>
+
+				<p>23:00 Variedades en la plaza de la Provincia: Flor de los Urales</p>
+
+				<p>23:00 Pirotecnia Caballer FX (Valencia). XVII Muestra Internacional de Espectáculos Pirotécnicos de Vitoria-Gasteiz</p>
+
+				<p>23:00 Aiguantulivinamérica 2. Goyo Jiménez.Teatro Principal Antzokia</p>
+
+				<p>23:30 Toros de fuego en la calle Olaguibel</p>
+
+				<h2>Programa del martes 9 agosto 2022</h2>
+				<p>00:00 Concierto en la Plaza de los Fueros: Mägo de Oz</p>
+
+				<p>00:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>00:00 III Kalejira nocturna y exhibición de fanfarres por el Casco Viejo</p>
+
+				<p>00:00 Verbena Petralak Fest 4.0, La Technomusic DJ Froy, en la Plaza del Arca</p>
+
+				<p>00:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>00:00 Verbena en la Plaza del Arca: Petralak Fest 4.0</p>
+			
+				<p>00:00 Concierto en la Plaza del Machete: Anje Duhalde</p>
+
+				<p>00:00 Concierto en las txosnas: Kop</p>
+
+				<p>00:30 Orquestas en la plaza de España: Jamaica Show</p>
+
+				<p>02:00 Concierto en las txosnas: Kaleko Urdangak</p>
+
+				<p>04:00 Concierto en las txosnas: Elektro Gaua</p>
+
+				<p>0:00 Piscina en la plaza de la Virgen Blanca</p>
+
+				<p>10:00 Campeonato de Bolos. Categoría juvenil. Bolera de los Fueros</p>
+
+				<p>10:30 Campeonato de Bolos. Categoría femenina. Bolera de los Fueros</p>
+
+				<p>10:30 Campeonato de Pelota Femenina 'Green Capital'</p>
+
+				<p>10:30 Campeonato de Pelota Vasca de Fiestas de la Virgen Blanca</p>
+
+				<p>10:30 Vaquillas en el Iradier Arena</p>
+
+				<p>11:00 Campeonato de Bolos. Categoría absoluta. Bolera de los Fueros</p>
+
+				<p>11:00 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>11:00 Visita guiada al Casco Medieval organizada por la Oficina de Turismo</p>
+
+				<p>11:30 Visita guiada al Casco Medieval organizada por la Oficina de Turismo (en euskara)</p>
+
+				<p>12:00 XIV Degustación solidaria de chorizo en la Plaza del Artium</p>
+
+				<p>12:00 VI 'Con voluntad comemos todos', en la plaza España</p>
+
+				<p>12:00 Patina con Los Martinikos de la mano de Jostari, en la Plaza del Renacimiento</p>
+
+				<p>12:00 Torneo Virgen Blanca de Herri Kirolak, Plaza de los Fueros</p>
+
+				<p>12:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>12:00 Dianas-Pasacalles en la Plaza de España</p>
+
+				<p>12:00 Kalejira desde la Plaza España</p>
+
+				<p>12:00 Comparsa de Gigantes, Cabezudos, Caballos y Sotas: itinerante desde la calle San Prudencio</p>
+
+				<p>12:00 Torneo Virgen Blanca de Herri Kirolak, Plaza de los Fueros</p>
+
+				<p>12:30 Espectáculo infantil en la plaza del Conde de Peñaflorida: Zirkun Zirko</p>
+
+				<p>12:30 Trikitixa en la Plaza del Machete</p>
+
+				<p>12:30 Gargantúa en la plaza del Conde de Peñaflorida</p>
+
+				<p>13:30 Despedida de la Comparsa de Gigantes, Cabezudos, Caballos y Sotas</p>
+			
+				<p>13:30 Bertso-saioak en la plaza del Machete</p>
+
+				<p>16:30 Feria de las fiestas de la Virgen Blanca</p>
+
+				<p>16:30 Paseíllo de ida de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>17:00 Paseíllo de ida de la Comisión de Blusas y Neskas</p>
+
+				<p>17:00 Visita guiada al Casco Medieval organizada por la Oficina de Turismo</p>
+
+				<p>17:30 Visita guiada al Casco Medieval organizada por la Oficina de Turismo (en euskara)</p>
+
+				<p>18:00 #dias9nuevosdias5, Dj L2, en la plaza Green Capital</p>
+
+				<p>18:00 Pelota veteranos. Exhibición de pelotaris veteranos y bertsolaris. Frontón portátil. Mendizorrotza</p>
+
+				<p>18:00 Zoco árabe en la Plaza Juan de Ayala</p>
+
+				<p>18:00 Visita: Comercios con alma</p>
+
+				<p>18:00 Gargantúa en el Parque del Prado</p>
+
+				<p>18:30 Final del VI Campeonato de Bolo Alavés para Cuadrillas, en la bolera de Los Fueros</p>
+
+				<p>19:00 Degustación Eusko Label en la Plaza de los Fueros</p>
+
+				<p>19:00 Visita guiada en Montehermoso</p>
+
+				<p>19:00 Bailables en la Florida. Orquesta Meteoro 2.0</p>
+
+				<p>19:30 Rincón del Humor. Alex O'Dogherty: 'Cosas de esas'</p>
+
+				<p>19:30 Dantza Plazan. Plaza del Machete</p>
+			
+				<p>19:30 Encierro infantil con toros hinchables presentado por El Torico, en la Plaza de la Virgen Blanca</p>
+
+				<p>20:00 Paseíllo de vuelta de la Federación de Asociaciones de Neskas y Blusas «Gasteizko Jaiak»</p>
+
+				<p>20:00 Aiguantulivinamérica 2. Goyo Jiménez.Teatro Principal Antzokia</p>
+
+				<p>20:30 Paseíllo de vuelta de la Comisión de Blusas y Neskas</p>
+
+				<p>20:30 Larrain Dantza y Txulalai, en la Plaza del Machete</p>
+
+				<p>21:00 Visita Guiada: Vitoria de Leyenda I</p>
+
+				<p>22:00 Concierto en las txosnas: Gorpunzkingz</p>
+
+				<p>23:00 Orquestas en la plaza de España: Taxxara Orquesta show</p>
+
+				<p>23:00 Variedades en la plaza de la Provincia: Indigo jazz</p>
+
+				<p>23:30 Toros de fuego en la calle Olaguibel</p>
 
 
-		</main>
-	</body>
-</html>
+			</div>
+			<div></div>
+
+		</article>
+	</main>
+
+	<footer>
+		<div>
+			<div class="youtubeg">
+				<a href="#">
+					<i id="youtube" class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
+		</div>
+		<div>
+			<span id="grupo_face" class='fa-stack fa-lg'>
+				<a href="https://es-es.facebook.com/gasteiz.vitoria">
+					<i id="circulo"  class='fas fa-circle fa-stack-1x'></i>
+					<i id="facebook" class='fab fa-facebook-f fa-stack-1x'></i>
+				</a>
+			</span>
+		</div>
+		<div>
+			<span id="grupo_twitter" class='fa-stack fa-lg '>
+				<a href="#">
+					<i id="circulo" class='fas fa-circle fa-stack-1x'></i>
+					<i id="twitter" class='fab fa-twitter fa-stack-1x'></i>
+				</a>
+			</span>
+		</div>
+		
+	</footer>
+
+
+
+  </body>
+ </html>
