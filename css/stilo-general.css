@@ -289,3 +289,36 @@ article{
         left: 45%;
     }
 }
+
+
+#visor{
+    position: relative;
+    width: 621px;
+    height: 383px;
+    margin: auto;
+    border: solid 6px #740808;
+    overflow: hidden;
+}
+#slider{
+    position: absolute;
+    width: 3105px;
+    left: 0px;
+    animation-name: animacion-sliders;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    
+}
+
+@keyframes animacion-sliders {
+    0% {left:0px;}
+    10%{left:-383px;}
+    25%{left:-383px;}
+    35%{left:-766px;}
+    50%{left:-766px;}
+    60%{left:-1149px;}
+    75%{left:-1149px;}
+    85%{left:-1532px;}
+    100%{left:-1532px;}
+}
