@@ -140,7 +140,9 @@ footer{
     position: absolute;
     left: 10em;
     height: 7em;
+   /*  z-index: -1; */
 }
+
 #idiomas img{
     height: 50px;
     border:transparent 1px blue;
@@ -160,7 +162,6 @@ footer{
 }
 /*///////////////////////////// texto e imagnes programa fiestas ////////////////////////// */
 article{
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,6 +177,90 @@ article{
     background-color: #fff;
 }
 
+/*/////////////////////////////actividades-generales ////////////////////////// */
+
+.listado{
+    display: table;
+    height: 35em;
+    margin: auto;
+}
+.grupo{
+    display: table-row;
+    justify-content: space-evenly;
+    height: 55px;
+}
+.primero, .tercero, .quinto{
+    background-color: #4c9e9e2d;
+
+}
+.boton-actividad{
+    border: solid 2px white;
+    border-radius: 15px;
+    width: 15em;
+    /* background-color: rgb(232, 183, 93); */
+    background-color: #4c9e9e7f;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+.boton-actividad:hover {
+    background-color: #4c9e9e;
+}
+.boton-actividad:hover > a{
+    color: white;
+}
+/* .grupo .boton-actividad a:hover {
+    color:white;
+} */
+.grupo a{
+    font-size: large;
+    color: black;
+    padding:1em;
+    
+}
+/*//////////////Origen-historia/////////////////*/
+
+.contenido-historia{
+    display: flex;
+    height: 45em;
+    margin-left: 6em;
+}
+.contenido-historia div{
+    flex:50%;
+    margin: 2em;
+}
+
+.contenido-historia div img{
+    height: 100%;
+    margin: auto;
+}
+#origen-texto{
+    padding-top: 2em;
+    font-size: large;
+}
+/*/////////////////////////////carteles ////////////////////////// */
+
+.grupo-carteles{
+    display: flex;
+    flex-direction: column;
+    /* height: 35em; */
+    
+}
+.carteles{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:2em;
+}
+.grupo-carteles .carteles:nth-child(even){
+    background-color: #4c9e9e79;
+}
+.cartel{
+    width: 15em;
+}
+.cartel img{
+    width: 100%;
+}
 /*////////////// media queries ////////////*/
 
 @media (max-width: 900px) {
