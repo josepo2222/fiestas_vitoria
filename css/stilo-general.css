@@ -15,6 +15,8 @@
    }
    h1{
        text-align: center;
+       font-size: xx-large;
+       margin: 2em 0;
    }
    .navbar {
     display: flex;
@@ -56,6 +58,7 @@
     display: none;
     border-radius: 8px;
     top: 35px;
+    z-index: 9999;
    }
    .dropdown li + li {
     margin-top: 10px;
@@ -71,6 +74,14 @@
    .historias:hover .dropdown {
     display: block;
    }
+
+/* main{
+    height: 80vh;
+}
+.extenso{
+    height: fit-content;
+} */
+
     footer{
         margin-top: 1em;
     }
@@ -88,6 +99,7 @@
     transition: 2s;
     font-size: 3em;
     margin-left: 1em;
+    overflow: hidden;
 }
 #grupo_face a{
     color: gray;
@@ -110,6 +122,7 @@
     color: black;
     transition: 2s;
     font-size:3em;
+    overflow: hidden;
 }
 #grupo_twitter a{
     color: gray;
@@ -132,6 +145,7 @@
     transition: 2s;
     color: white;
     font-size:3em;
+    overflow: hidden;
 }
 
 
@@ -160,7 +174,7 @@ footer{
     position: absolute;
     left: 10em;
     height: 7em;
-   /*  z-index: -1; */
+   
 }
 
 #idiomas img{
@@ -169,24 +183,34 @@ footer{
     border-radius: 2em;
     margin-top: 2em;
 }
-
-
+#extenso h1{
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
 /* /////////////////////////// navegador-dias ///////////////////////// */
 .navegador-dias ul{
     display: flex;
     justify-content: space-around;
 }
+.navegador-dias ul a{
+    color: black;
+}
 .navegador-dias{
+    background-color: white;
     border-top: solid 1px black ;
     border-bottom: solid 1px black;
+    position: sticky;
+    top: 2.75em;
+    z-index: 0;
 }
 /*///////////////////////////// texto e imagnes programa fiestas ////////////////////////// */
 article{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color:rgb(176, 185, 228);
-    background-image: url(../imagenes/celedon17.jpg);
+    background-color: rgba(0, 128, 128, 0.068);
     border:solid 1px black; 
 }
 .programa{
@@ -357,6 +381,7 @@ article{
     }
 }
 
+/* ////////////////// Galeria //////////////////  */
 
 #visor{
     position: relative;

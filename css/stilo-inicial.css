@@ -61,16 +61,10 @@ input[type=text], select, textarea{
 footer{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     padding: 2px;
-   /*  margin: 1em; */
-
-}
-
-footer{
     margin-top: 1em;
     background-color: rgba(255, 255, 255, 0.514);
-    
 }
 
 footer .redessociales{
@@ -99,6 +93,17 @@ main .row{
     height: 2em;
 }
 
+#idiomas{
+    position: absolute;
+    right: 1em;
+}
+#idiomas img{
+    height: 50px;
+    border:transparent 1px blue;
+    border-radius: 2em;
+    margin-top: 2em;
+}
+
 
 /* /////////////////////////// facebok /////////////////////////// */
 #grupo_face{
@@ -106,6 +111,7 @@ main .row{
     transition: 2s;
     font-size:1em;
     margin-left: 1em;
+    overflow: hidden;
 }
 #facebook{
     color: white;
@@ -125,6 +131,7 @@ main .row{
     color: black;
     transition: 2s;
     font-size:1em;
+    overflow: hidden;
 }
 #grupo_twitter a:hover {
     color: darkblue;
@@ -138,43 +145,13 @@ main .row{
 #twitter:hover{
     transform: rotate(360deg);
 }
+
 /* /////////////////////////// youtube /////////////////////////// */			
 .fa-youtube{
     font-size:1em;
     transition: 2s;
+    overflow: hidden;
 }
 .fa-youtube:hover{
     color: red;
-}
-
-#fiesta{
-    display: flex;
-
-}
-#fiesta h1{
-    width: 100%;
-}
-
-#idiomas{
-    position: absolute;
-    right: 1em;
-}
-#idiomas img{
-    height: 50px;
-    border:transparent 1px blue;
-    border-radius: 2em;
-    margin-top: 2em;
-}
-/*////////////// media queries ////////////*/
-@media (max-width: 1450px) {
-    #idiomas{
-        display: inline-block;
-        right: 30%;
-        top:-2em;
-    }
-}
-@media (max-width: 533px) {
-    #idiomas img{
-        height: 30px;
-    }
 }
