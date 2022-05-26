@@ -71,14 +71,26 @@
    .historias:hover .dropdown {
     display: block;
    }
-   
+    footer{
+        margin-top: 1em;
+    }
+    footer .redessociales{
+        display: flex;
+        align-items: center;
+    }
+    footer a{
+        color: white;
+    }
    
 /* /////////////////////////// facebok /////////////////////////// */
 #grupo_face{
     color: black;
     transition: 2s;
-    font-size:1em;
+    font-size: 3em;
     margin-left: 1em;
+}
+#grupo_face a{
+    color: gray;
 }
 #facebook{
     color: white;
@@ -97,7 +109,10 @@
 #grupo_twitter{
     color: black;
     transition: 2s;
-    font-size:1em;
+    font-size:3em;
+}
+#grupo_twitter a{
+    color: gray;
 }
 #grupo_twitter a:hover {
     color: darkblue;
@@ -115,7 +130,12 @@
 .fa-youtube{
     font-size:1em;
     transition: 2s;
+    color: white;
+    font-size:3em;
 }
+
+
+
 .fa-youtube:hover{
     color: red;
 }
@@ -130,7 +150,7 @@
 
 footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 2px;
     background-color: rgb(1, 139, 139);
@@ -275,6 +295,38 @@ article{
     width: 15em;
 }
 
+/* ////////////////////////////////curiosidades//////////////////////////*/
+
+.contenido-curiosidades{
+    margin: 0 10em;
+    display: flex;
+    flex-direction: column;
+}
+.contenido-curiosidades div{
+    margin-bottom: 5em;
+    text-align: center;
+}
+.contenido-curiosidades div img{
+    height: 40em;
+    
+}
+/* ////////////////////////////// stilo-actividades-detalladas////////////////*/
+.contenido-actividad{
+    display: flex;
+    flex-direction: column;   
+    margin:0 5em;
+}
+.actividad-primer-contenedor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.imagenes-actividad{
+    margin-right: 5em;
+}
+.imagenes-actividad img{
+   width: 40em;
+}
 /*////////////// media queries ////////////*/
 
 @media (max-width: 900px) {
@@ -315,7 +367,7 @@ article{
 }
 #slider{
     position: absolute;
-    width: 3105px;
+    width: 3150px;
     left: 0px;
     animation-name: animacion-sliders;
     animation-duration: 20s;
@@ -327,12 +379,12 @@ article{
 
 @keyframes animacion-sliders {
     0% {left:0px;}
-    10%{left:-383px;}
-    25%{left:-383px;}
-    35%{left:-766px;}
-    50%{left:-766px;}
-    60%{left:-1149px;}
-    75%{left:-1149px;}
-    85%{left:-1532px;}
-    100%{left:-1532px;}
+    10%{left:-630px;}
+    25%{left:-630px;}
+    35%{left:-1260px;}
+    50%{left:-1260px;}
+    60%{left:-1890px;}
+    75%{left:-1890px;}
+    85%{left:-2520px;}
+    100%{left:-2520px;}
 }
