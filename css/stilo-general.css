@@ -46,7 +46,7 @@
    .menu li {
     padding: 5px 14px;
    }
-   .actividades {
+   .historias {
     position: relative; 
    }
    .dropdown {
@@ -68,7 +68,7 @@
    .dropdown li:hover {
     background-color: #4c9e9e;
    }
-   .actividades:hover .dropdown {
+   .historias:hover .dropdown {
     display: block;
    }
    
@@ -197,7 +197,6 @@ article{
     border: solid 2px white;
     border-radius: 15px;
     width: 15em;
-    /* background-color: rgb(232, 183, 93); */
     background-color: #4c9e9e7f;
     display: table-cell;
     vertical-align: middle;
@@ -209,15 +208,15 @@ article{
 .boton-actividad:hover > a{
     color: white;
 }
-/* .grupo .boton-actividad a:hover {
-    color:white;
-} */
+
 .grupo a{
     font-size: large;
     color: black;
     padding:1em;
     
 }
+
+
 /*//////////////Origen-historia/////////////////*/
 
 .contenido-historia{
@@ -243,8 +242,6 @@ article{
 .grupo-carteles{
     display: flex;
     flex-direction: column;
-    /* height: 35em; */
-    
 }
 .carteles{
     display: flex;
@@ -261,6 +258,23 @@ article{
 .cartel img{
     width: 100%;
 }
+/*/////////////////////////////carteles ////////////////////////// */
+
+.grupo-botones{
+    display: flex;
+    flex-direction: column;
+    height: 35em;
+}
+.primer-grupo-botones, .segundo-grupo-botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding:2em;
+}
+.boton-actividad-principal{
+    width: 15em;
+}
+
 /*////////////// media queries ////////////*/
 
 @media (max-width: 900px) {
