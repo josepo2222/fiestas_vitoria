@@ -221,6 +221,7 @@ article{
     display: table-cell;
     vertical-align: middle;
     text-align: center;
+    cursor: pointer;
 }
 .boton-actividad:hover {
     background-color: #4c9e9e;
